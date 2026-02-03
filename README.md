@@ -41,7 +41,7 @@ O sistema busca estimar o valor bruto do frete e auxiliar na tomada de decisão,
 
 ---
 ## 📁 Estrutura do Projeto
-
+```
 Projeto/
 └── src/
 └── main/
@@ -49,7 +49,7 @@ Projeto/
 └── Apliccation/
 ├── Main.java
 └── Calculadora.java
-
+```
 ---
 
 ## ▶️ Como Executar
@@ -69,7 +69,7 @@ Main.java
 ---
 ## 👨‍💻 Autor
 
-Pedro Henrique Gomes
+Pedro Henrique Gomes  
 Estudante de Engenharia de Computação  
 Projeto acadêmico com foco prático no transporte rodoviário brasileiro 🚛🇧🇷
 
