@@ -10,12 +10,14 @@ public class Calculadora {
     private double ValorLiquido;
     private int eixos;
     private double custoKM = 0.13; //valor medio de desgaste por eixo seria R$ 0,13 com pneu e manuteção
-
+    private double custoTotalCombustivel;
+    private double custoTotalDesgaste;
+    private double custoTotal;
 
     public void calcular() {
-        double custoTotalCombustivel = (distancia / mediaConsumo) * precoCombustivel;
-        double custoTotalDesgaste = distancia * custoKM * eixos;
-        double custoTotal = custoTotalCombustivel + custoTotalDesgaste;
+        custoTotalCombustivel = (distancia / mediaConsumo) * precoCombustivel;
+        custoTotalDesgaste = distancia * custoKM * eixos;
+        custoTotal = custoTotalCombustivel + custoTotalDesgaste;
 
         //Cálculo do valor bruto do frete
         if (precoFreteKM > 0) {
@@ -28,11 +30,6 @@ public class Calculadora {
 
         ValorLiquido = ValorBruto - custoTotal;
 
-        System.out.printf("Custo total com combustível: R$ %.2f\n", custoTotalCombustivel);
-        System.out.printf("Custo total com desgaste: R$ %.2f\n", custoTotalDesgaste);
-        System.out.printf("Custo total da viagem: R$ %.2f\n", custoTotal);
-        System.out.printf("Valor bruto do frete: R$ %.2f\n", ValorBruto);
-        System.out.printf("Valor líquido do frete: R$ %.2f\n", ValorLiquido);
     }
 
     public Calculadora(int eixos, double distancia, double capacidadeCarga, double mediaConsumo, double precoFreteCarga, double precoCombustivel, double precoFreteTonelada, double precoFreteKM) {
@@ -47,6 +44,54 @@ public class Calculadora {
     }
 
     public Calculadora() {
+    }
+
+    public double getCustoTotalCombustivel() {
+        return custoTotalCombustivel;
+    }
+
+    public void setCustoTotalCombustivel(double custoTotalCombustivel) {
+        this.custoTotalCombustivel = custoTotalCombustivel;
+    }
+
+    public double getCustoTotal() {
+        return custoTotal;
+    }
+
+    public void setCustoTotal(double custoTotal) {
+        this.custoTotal = custoTotal;
+    }
+
+    public double getCustoTotalDesgaste() {
+        return custoTotalDesgaste;
+    }
+
+    public void setCustoTotalDesgaste(double custoTotalDesgaste) {
+        this.custoTotalDesgaste = custoTotalDesgaste;
+    }
+
+    public double getValorBruto() {
+        return ValorBruto;
+    }
+
+    public void setValorBruto(double valorBruto) {
+        ValorBruto = valorBruto;
+    }
+
+    public double getCustoKM() {
+        return custoKM;
+    }
+
+    public void setCustoKM(double custoKM) {
+        this.custoKM = custoKM;
+    }
+
+    public double getValorLiquido() {
+        return ValorLiquido;
+    }
+
+    public void setValorLiquido(double valorLiquido) {
+        ValorLiquido = valorLiquido;
     }
 
     public double getPrecoFreteKM() {
