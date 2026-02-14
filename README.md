@@ -113,34 +113,38 @@ Projeto/
      
  ## 💻 Exemplo de Uso
 ```md
+===========================================================
+           🚚 Calculadora de frete Rodoviário 🚚
+===========================================================
 
+🚚 INFORME OS DADOS DO VEÍCULO:
 
-Seja bem vindo a calculadora de frete!
+Digite a quantidade de eixos do veículo: 7
+Digite a média de consumo do veículo (KM/L): 1,8
+Digite a capacidade de carga do veículo (TONELADAS): 38
+------------------------------------------------------------
 
-Digite o tipo de frete:
-1 - KM
-2 - Tonelada
-3 - Carga
+📦 INFORME OS DADOS DO FRETE:
 
-1
+Digite o preço do combustível por litro: 5,94
+Digite a distância total do frete (KM): 550
+Tipo de frete:
+1 - Frete por KM
+2 - Frete por Tonelada
+3 - Frete por Carga
+Digite a opção desejada: 2
+Digite qual o valor do frete por Tonelada: 98
+===========================================================
+                        RESULTADO                        
+===========================================================
 
-Digite o valor por KM:
+💰 Valor bruto do frete:        R$ 3724,00
+⛽ Custo total com combustível: R$ 1815,00
+🔧 Custo total com desgaste:    R$ 500,50
+📉 Custo total da viagem:       R$ 2315,50
 
-3.50
-
-Digite o preço do combustível:
-
-6.20
-
-Digite a distância:
-
-850
-
-Resultado:
-
-Valor bruto: R$ 2975.00
-Custo combustível: R$ 527.00
-Valor líquido: R$ 2448.00
+💵 Valor líquido do frete:      R$ 1408,50
+📊 Margem de lucro:            37,82%
 ```
 ---
 
