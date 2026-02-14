@@ -1,82 +1,156 @@
 # 🚚 Calculadora de Frete Rodoviário
 
-Projeto desenvolvido em **Java** com o objetivo de auxiliar caminhoneiros e transportadores no cálculo de fretes rodoviários, considerando custos reais da operação como combustível, distância, tipo de frete e características do veículo.
+Projeto desenvolvido em **Java** com foco em **Programação Orientada a Objetos e arquitetura em camadas**, com o objetivo de auxiliar caminhoneiros e transportadores no cálculo preciso de fretes rodoviários considerando os custos reais da operação.
 
 ---
 
 ## 📌 Objetivo do Projeto
 
-A Calculadora de Frete Rodoviário foi criada para ajudar o caminhoneiro a responder a pergunta mais importante da viagem:
+A Calculadora de Frete Rodoviário foi criada para responder a pergunta mais importante de qualquer transporte:
 
 > “Esse frete realmente compensa?”
 
-O sistema busca estimar o valor bruto do frete e auxiliar na tomada de decisão, evitando prejuízos e fretes mal pagos.
+O sistema calcula:
+
+- Valor bruto do frete
+- Custo com combustível
+- Custo com desgaste do veículo
+- Valor líquido final da operação
+
+Permitindo ao transportador tomar decisões mais seguras e evitar prejuízos.
 
 ---
 
-## ⚙️ Funcionalidades Atuais (v1)
+## ⚙️ Funcionalidades Atuais (v3)
 
-- Seleção do tipo de frete:
-  - 💰 Frete por KM  
-  - ⚖️ Frete por Tonelada  
-  - 🚛 Frete por Carga  
-- Cálculo baseado em:
-  - Preço do combustível
-  - Média de consumo do veículo (km/l)
-  - Distância total percorrida
-  - Capacidade de carga
-  - Quantidade de eixos
-- Estrutura orientada a objetos
-- Projeto organizado com Maven
+✔ Seleção do tipo de frete utilizando **ENUM**
+- 💰 Frete por KM  
+- ⚖️ Frete por Tonelada  
+- 🚛 Frete por Carga  
+
+✔ Cálculo automático de:
+
+- ⛽ Custo total com combustível
+- 🔧 Custo total com desgaste por eixo
+- 💵 Valor bruto do frete
+- 📉 Valor líquido do frete
+
+✔ Modelagem orientada a objetos com separação de responsabilidades:
+
+- Classe `Frete` → dados do frete
+- Classe `Veiculo` → dados do veículo
+- Classe `Calculadora` → regras de negócio
+- Enum `TipoFrete` → define o tipo do frete
+- Classe `Main` → interação com o usuário
+
+✔ Arquitetura organizada em camadas:
+
+- Application
+- Model
+- Service
+
+✔ Tratamento de erros de entrada do usuário
+
+✔ Projeto estruturado com Maven
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Java  
-- Maven  
-- Git  
-- GitHub  
-- IntelliJ IDEA  
+- Java
+- Maven
+- Git
+- GitHub
+- IntelliJ IDEA
+- Programação Orientada a Objetos (POO)
 
 ---
+
 ## 📁 Estrutura do Projeto
-```
+
 Projeto/
 └── src/
 └── main/
 └── java/
-└── Apliccation/
-├── Main.java
+├── Application/
+│ └── Main.java
+│
+├── Model/
+│ ├── Frete.java
+│ ├── Veiculo.java
+│ └── TipoFrete.java
+│
+└── Service/
 └── Calculadora.java
-```
+
+
+---
+
+## 🧠 Conceitos Aplicados
+
+- Programação Orientada a Objetos
+- Encapsulamento
+- Separação de responsabilidades
+- Arquitetura em camadas
+- Uso de ENUM
+- Boas práticas de código Java
+- Organização de projeto com Maven
+
 ---
 
 ## ▶️ Como Executar
 
-1. Clone o repositório:
+### 1. Clone o repositório
+
+```bash
 git clone https://github.com/pedrohen-g/Calculadora-frete-caminhao.git
+2. Abra no IntelliJ IDEA ou outra IDE Java
+3. Execute a classe
+Application/Main.java
+4. Siga as instruções no terminal
+🚀 Evolução do Projeto
+v1
+Versão inicial com lógica básica
 
+v2
+Introdução de Programação Orientada a Objetos
 
-2. Abra o projeto em uma IDE Java (recomendado: IntelliJ IDEA)
+v3 (Atual)
+Refatoração completa
 
-3. Execute a classe:
-Main.java
+Uso de ENUM
 
+Separação em camadas
 
-4. Siga as instruções exibidas no terminal.
+Arquitetura mais profissional
 
----
-## 👨‍💻 Autor
+Código mais limpo e escalável
 
-Pedro Henrique Gomes  
-Estudante de Engenharia de Computação  
-Projeto acadêmico com foco prático no transporte rodoviário brasileiro 🚛🇧🇷
+🔮 Próximas Melhorias (Roadmap)
+Interface gráfica (JavaFX)
 
----
+Histórico de fretes
 
-## 📄 Licença
+Exportação de relatórios
 
-Projeto de uso educacional e pessoal.  
-Sinta-se livre para estudar, modificar e evoluir o código.
+Integração com banco de dados
 
+Simulação de lucro/prejuízo
+
+Interface visual profissional
+
+👨‍💻 Autor
+Pedro Henrique Gomes Silva
+
+🎓 Estudante de Engenharia de Computação (5º período)
+
+💻 Foco em desenvolvimento backend com Java
+
+🚛 Projeto com aplicação real no transporte rodoviário brasileiro
+
+LinkedIn
+GitHub
+
+📄 Licença
+Projeto de uso educacional e portfólio.
+Livre para estudo, modificação e evolução.
