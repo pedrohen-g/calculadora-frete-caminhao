@@ -21,7 +21,7 @@ Permitindo ao transportador tomar decisões mais seguras e evitar prejuízos.
 
 ---
 
-## ⚙️ Funcionalidades Atuais (v3)
+## ⚙️ Funcionalidades Atuais (v3.1)
 
 ✔ Seleção do tipo de frete utilizando **ENUM**
 - 💰 Frete por KM  
