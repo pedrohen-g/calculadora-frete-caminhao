@@ -106,11 +106,10 @@ Projeto/
 
 ### 1. Clone o repositório
 
-git clone https://github.com/pedrohen-g/Calculadora-frete-caminhao.git
-2. Abra no IntelliJ IDEA ou outra IDE Java
-3. Execute a classe
-Application/Main.java
-4. Siga as instruções no terminal
+- git clone https://github.com/pedrohen-g/Calculadora-frete-caminhao.git
+- 2. Abra no IntelliJ IDEA ou outra IDE Java
+- 3. Execute a classe Application/Main.java
+- 4. Siga as instruções no terminal
 
 ---
 
@@ -125,29 +124,29 @@ Introdução de Programação Orientada a Objetos
 v3 (Atual)
 Refatoração completa
 
-. Uso de ENUM
+- Uso de ENUM
 
-. Separação em camadas
+- Separação em camadas
 
-. Arquitetura mais profissional
+- Arquitetura mais profissional
 
-. Código mais limpo e escalável
+- Código mais limpo e escalável
 
 ---
 
 ##🔮 Próximas Melhorias (Roadmap)
 
-. Interface gráfica (JavaFX)
+- Interface gráfica (JavaFX)
 
-. Histórico de fretes
+- Histórico de fretes
 
-. Exportação de relatórios
+- Exportação de relatórios
 
-. Integração com banco de dados
+- Integração com banco de dados
 
-. Simulação de lucro/prejuízo
+- Simulação de lucro/prejuízo
 
-. Interface visual profissional
+- Interface visual profissional
 
 ---
 
