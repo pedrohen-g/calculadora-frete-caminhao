@@ -113,7 +113,7 @@ Projeto/
 
 ---
 
-##🚀 Evolução do Projeto
+## 🚀 Evolução do Projeto
 
 v1
 Versão inicial com lógica básica
@@ -134,7 +134,7 @@ Refatoração completa
 
 ---
 
-##🔮 Próximas Melhorias (Roadmap)
+## 🔮 Próximas Melhorias (Roadmap)
 
 - Interface gráfica (JavaFX)
 
