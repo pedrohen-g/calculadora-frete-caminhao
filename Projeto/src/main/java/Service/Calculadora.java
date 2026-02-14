@@ -39,4 +39,14 @@ public class Calculadora {
         return calcularValorBruto(frete, veiculo) - custoTotal;
     }
 
+    public double margemFrete(Frete frete, Veiculo veiculo){
+        double valorBruto = calcularValorBruto(frete, veiculo);
+        double valorLiquido = valorLiquido(frete, veiculo);
+
+        if(valorBruto == 0){
+            return 0;
+        }
+
+        return (valorLiquido / valorBruto) * 100;
+    }
 }

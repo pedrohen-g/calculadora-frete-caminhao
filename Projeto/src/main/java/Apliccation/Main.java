@@ -13,7 +13,7 @@ public class Main {
     private static int lerInteiroPositivo(Scanner sc, String mensagem){
         while (true) {
             try {
-                System.out.println(mensagem);
+                System.out.print(mensagem);
                 int valor = sc.nextInt();
 
                 if (valor < 0 ){
@@ -31,7 +31,7 @@ public class Main {
     private static double lerDoublePositivo(Scanner sc, String mensagem){
         while (true) {
             try {
-                System.out.println(mensagem);
+                System.out.print(mensagem);
                 double valor = sc.nextDouble();
 
                 if (valor < 0 ){
@@ -58,8 +58,20 @@ public class Main {
 
     while (true) {
         try {
-            System.out.println("Seja bem vindo a calculadora de frete!\nBy Pedro Henrique\n");
-            System.out.println("Seu frete é por KM, TONELADA ou por carga? (Digite 1 KM, Tonelada 2 ou Carga 3):");
+            System.out.println("===========================================================");
+            System.out.println("           \uD83D\uDE9A Calculadora de frete Rodoviário \uD83D\uDE9A");
+            System.out.println("===========================================================\n");
+            System.out.println("\uD83D\uDE9A INFORME OS DADOS DO VEÍCULO:\n");
+            veiculo.setEixos(lerInteiroPositivo(sc, "Digite a quantidade de eixos do veículo: "));
+            veiculo.setMediaConsumo(lerDoublePositivo(sc, "Digite a média de consumo do veículo (KM/L): "));
+            veiculo.setCapacidadeCarga(lerDoublePositivo(sc,"Digite a capacidade de carga do veículo (TONELADAS): "));
+            System.out.println("------------------------------------------------------------\n");
+
+            System.out.println("\uD83D\uDCE6 INFORME OS DADOS DO FRETE:\n");
+            frete.setCombustivel(lerDoublePositivo(sc,"Digite o preço do combustível por litro: "));
+            frete.setDistancia(lerInteiroPositivo(sc, "Digite a distância total do frete (KM): "));
+            System.out.println("Tipo de frete:\n" + "1 - Frete por KM\n" + "2 - Frete por Tonelada\n" + "3 - Frete por Carga");
+            System.out.print("Digite a opção desejada: ");
             opcao = sc.nextInt();
 
             if (opcao < 1 || opcao > 3) {
@@ -94,21 +106,19 @@ public class Main {
                 break;
         }
 
-        frete.setCombustivel(lerDoublePositivo(sc,"Digite o preço do combustível por litro: "));
+        System.out.println("===========================================================");
+        System.out.println("                        RESULTADO                        ");
+        System.out.println("===========================================================\n");
 
-        veiculo.setMediaConsumo(lerDoublePositivo(sc, "Digite a média de consumo do veículo (KM/L): "));
+        System.out.printf("\uD83D\uDCB0 Valor bruto do frete:        R$ %.2f\n", calculadora.calcularValorBruto(frete, veiculo));
+        System.out.printf("⛽ Custo total com combustível: R$ %.2f\n", calculadora.custoTotalCombustivel(frete, veiculo));
+        System.out.printf("\uD83D\uDD27 Custo total com desgaste:    R$ %.2f\n", calculadora.custoTotalDesgaste(frete, veiculo));
+        System.out.printf("\uD83D\uDCC9 Custo total da viagem:       R$ %.2f\n\n", calculadora.custoTotalCombustivel(frete, veiculo) + calculadora.custoTotalDesgaste(frete, veiculo));
 
-        frete.setDistancia(lerInteiroPositivo(sc, "Digite a distância total do frete (KM): "));
+        System.out.printf("\uD83D\uDCB5 Valor líquido do frete:      R$ %.2f\n", calculadora.valorLiquido(frete, veiculo));
 
-        veiculo.setCapacidadeCarga(lerDoublePositivo(sc,"Digite a capacidade de carga do veículo (TONELADAS): "));
+        System.out.printf("\uD83D\uDCCA Margem de lucro:            %.2f%%\n", calculadora.margemFrete(frete, veiculo));
 
-        veiculo.setEixos(lerInteiroPositivo(sc, "Digite a quantidade de eixos do veículo: "));
-
-        System.out.printf("Custo total com combustível: R$ %.2f\n", calculadora.custoTotalCombustivel(frete, veiculo));
-        System.out.printf("Custo total com desgaste: R$ %.2f\n", calculadora.custoTotalDesgaste(frete, veiculo));
-        System.out.printf("Custo total da viagem: R$ %.2f\n", calculadora.custoTotalCombustivel(frete, veiculo) + calculadora.custoTotalDesgaste(frete, veiculo));
-        System.out.printf("Valor bruto do frete: R$ %.2f\n", calculadora.calcularValorBruto(frete, veiculo));
-        System.out.printf("Valor líquido do frete: R$ %.2f\n", calculadora.valorLiquido(frete, veiculo));
 
         sc.close();
     }
