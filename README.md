@@ -110,7 +110,38 @@ Projeto/
 - 2. Abra no IntelliJ IDEA ou outra IDE Java
 - 3. Execute a classe Application/Main.java
 - 4. Siga as instruções no terminal
+     
+ ## 💻 Exemplo de Uso
+```md
 
+
+Seja bem vindo a calculadora de frete!
+
+Digite o tipo de frete:
+1 - KM
+2 - Tonelada
+3 - Carga
+
+1
+
+Digite o valor por KM:
+
+3.50
+
+Digite o preço do combustível:
+
+6.20
+
+Digite a distância:
+
+850
+
+Resultado:
+
+Valor bruto: R$ 2975.00
+Custo combustível: R$ 527.00
+Valor líquido: R$ 2448.00
+```
 ---
 
 ## 🚀 Evolução do Projeto
@@ -150,14 +181,16 @@ Refatoração completa
 
 ---
 
-👨‍💻 Autor
-Pedro Henrique Gomes Silva
+## 👨‍💻 Autor
 
-🎓 Estudante de Engenharia de Computação (5º período)
+Pedro Henrique Gomes Silva  
 
-💻 Foco em desenvolvimento backend com Java
+🎓 Estudante de Engenharia de Computação — 5º período  
+💻 Foco em desenvolvimento backend com Java  
+🚛 Projeto com aplicação prática no transporte rodoviário  
 
-🚛 Projeto com aplicação real no transporte rodoviário brasileiro
+🔗 LinkedIn:  
+https://www.linkedin.com/in/pedro-henrique-gomes-silva-6296452b6/
 
 
 📄 Licença
