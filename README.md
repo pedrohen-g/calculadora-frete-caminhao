@@ -68,22 +68,26 @@ Permitindo ao transportador tomar decisões mais seguras e evitar prejuízos.
 
 ## 📁 Estrutura do Projeto
 
+```
 Projeto/
+│
 └── src/
-└── main/
-└── java/
-├── Application/
-│ └── Main.java
-│
-├── Model/
-│ ├── Frete.java
-│ ├── Veiculo.java
-│ └── TipoFrete.java
-│
-└── Service/
-└── Calculadora.java
-
-
+    │
+    └── main/
+        │
+        └── java/
+            │
+            ├── Application/
+            │   └── Main.java
+            │
+            ├── Model/
+            │   ├── Frete.java
+            │   ├── Veiculo.java
+            │   └── TipoFrete.java
+            │
+            └── Service/
+                └── Calculadora.java
+```
 ---
 
 ## 🧠 Conceitos Aplicados
@@ -102,14 +106,16 @@ Projeto/
 
 ### 1. Clone o repositório
 
-```
 git clone https://github.com/pedrohen-g/Calculadora-frete-caminhao.git
 2. Abra no IntelliJ IDEA ou outra IDE Java
 3. Execute a classe
 Application/Main.java
-4. Siga as instruções no terminal'''
---- 
-🚀 Evolução do Projeto
+4. Siga as instruções no terminal
+
+---
+
+##🚀 Evolução do Projeto
+
 v1
 Versão inicial com lógica básica
 
@@ -119,26 +125,31 @@ Introdução de Programação Orientada a Objetos
 v3 (Atual)
 Refatoração completa
 
-Uso de ENUM
+. Uso de ENUM
 
-Separação em camadas
+. Separação em camadas
 
-Arquitetura mais profissional
+. Arquitetura mais profissional
 
-Código mais limpo e escalável
+. Código mais limpo e escalável
 
-🔮 Próximas Melhorias (Roadmap)
-Interface gráfica (JavaFX)
+---
 
-Histórico de fretes
+##🔮 Próximas Melhorias (Roadmap)
 
-Exportação de relatórios
+. Interface gráfica (JavaFX)
 
-Integração com banco de dados
+. Histórico de fretes
 
-Simulação de lucro/prejuízo
+. Exportação de relatórios
 
-Interface visual profissional
+. Integração com banco de dados
+
+. Simulação de lucro/prejuízo
+
+. Interface visual profissional
+
+---
 
 👨‍💻 Autor
 Pedro Henrique Gomes Silva
@@ -149,8 +160,6 @@ Pedro Henrique Gomes Silva
 
 🚛 Projeto com aplicação real no transporte rodoviário brasileiro
 
-LinkedIn
-GitHub
 
 📄 Licença
 Projeto de uso educacional e portfólio.
