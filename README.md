@@ -102,12 +102,13 @@ Projeto/
 
 ### 1. Clone o repositório
 
-```bash
+```
 git clone https://github.com/pedrohen-g/Calculadora-frete-caminhao.git
 2. Abra no IntelliJ IDEA ou outra IDE Java
 3. Execute a classe
 Application/Main.java
-4. Siga as instruções no terminal
+4. Siga as instruções no terminal'''
+--- 
 🚀 Evolução do Projeto
 v1
 Versão inicial com lógica básica
