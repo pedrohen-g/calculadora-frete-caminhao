@@ -1,68 +1,69 @@
 # 🚚 Calculadora de Frete Rodoviário
 
-Projeto desenvolvido em **Java** com foco em **Programação Orientada a Objetos e arquitetura em camadas**, com o objetivo de auxiliar caminhoneiros e transportadores no cálculo preciso de fretes rodoviários considerando os custos reais da operação.
+Projeto desenvolvido em **Java** com foco em **Programação Orientada a Objetos (POO)** e **arquitetura em camadas**, com o objetivo de auxiliar caminhoneiros e transportadores a analisarem a viabilidade real de um frete.
 
 ---
 
 ## 📌 Objetivo do Projeto
 
-A Calculadora de Frete Rodoviário foi criada para responder a pergunta mais importante de qualquer transporte:
+A Calculadora de Frete Rodoviário foi criada para responder a uma pergunta essencial no transporte:
 
-> “Esse frete realmente compensa?”
+> **“Esse frete realmente vale a pena?”**
 
-O sistema calcula:
+O sistema realiza o cálculo completo da operação, considerando:
 
-- Valor bruto do frete
-- Custo com combustível
-- Custo com desgaste do veículo
-- Valor líquido final da operação
+- Valor bruto do frete  
+- Custo com combustível  
+- Custo com desgaste do veículo  
+- Valor líquido da viagem  
+- Margem de lucro  
 
-Permitindo ao transportador tomar decisões mais seguras e evitar prejuízos.
+Permitindo decisões mais seguras e evitando prejuízos.
 
 ---
 
-## ⚙️ Funcionalidades Atuais (v3.1)
+## ⚙️ Funcionalidades (v3.1)
 
-✔ Seleção do tipo de frete utilizando **ENUM**
+✔ Seleção do tipo de frete utilizando **ENUM**  
 - 💰 Frete por KM  
 - ⚖️ Frete por Tonelada  
 - 🚛 Frete por Carga  
 
-✔ Cálculo automático de:
+✔ Cálculos automáticos:
 
-- ⛽ Custo total com combustível
-- 🔧 Custo total com desgaste por eixo
-- 💵 Valor bruto do frete
-- 📉 Valor líquido do frete
+- ⛽ Custo total com combustível  
+- 🔧 Custo de desgaste por eixo  
+- 💵 Valor bruto do frete  
+- 📉 Custo total da operação  
+- 📊 Margem de lucro  
 
 ✔ Modelagem orientada a objetos com separação de responsabilidades:
 
-- Classe `Frete` → dados do frete
-- Classe `Veiculo` → dados do veículo
-- Classe `Calculadora` → regras de negócio
-- Enum `TipoFrete` → define o tipo do frete
-- Classe `Main` → interação com o usuário
+- `Frete` → dados do frete  
+- `Veiculo` → dados do veículo  
+- `Calculadora` → regras de negócio  
+- `TipoFrete` → definição do tipo de frete  
+- `Main` → interação com o usuário  
 
-✔ Arquitetura organizada em camadas:
+✔ Arquitetura em camadas:
 
-- Application
-- Model
-- Service
+- `Application`  
+- `Model`  
+- `Service`  
 
-✔ Tratamento de erros de entrada do usuário
+✔ Tratamento de erros de entrada  
 
-✔ Projeto estruturado com Maven
+✔ Projeto estruturado com **Maven**
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Java
-- Maven
-- Git
-- GitHub
-- IntelliJ IDEA
-- Programação Orientada a Objetos (POO)
+- Java  
+- Maven  
+- Git  
+- GitHub  
+- IntelliJ IDEA  
 
 ---
 
@@ -72,11 +73,8 @@ Permitindo ao transportador tomar decisões mais seguras e evitar prejuízos.
 Projeto/
 │
 └── src/
-    │
     └── main/
-        │
         └── java/
-            │
             ├── Application/
             │   └── Main.java
             │
@@ -88,33 +86,38 @@ Projeto/
             └── Service/
                 └── Calculadora.java
 ```
+
 ---
 
 ## 🧠 Conceitos Aplicados
 
-- Programação Orientada a Objetos
-- Encapsulamento
-- Separação de responsabilidades
-- Arquitetura em camadas
-- Uso de ENUM
-- Boas práticas de código Java
-- Organização de projeto com Maven
+- Programação Orientada a Objetos  
+- Encapsulamento  
+- Separação de responsabilidades  
+- Arquitetura em camadas  
+- Uso de ENUM  
+- Boas práticas de código Java  
 
 ---
 
 ## ▶️ Como Executar
 
-### 1. Clone o repositório
+1. Clone o repositório:
+```
+git clone https://github.com/pedrohen-g/Calculadora-frete-caminhao.git
+```
 
-- git clone https://github.com/pedrohen-g/Calculadora-frete-caminhao.git
-- 2. Abra no IntelliJ IDEA ou outra IDE Java
-- 3. Execute a classe Application/Main.java
-- 4. Siga as instruções no terminal
-     
- ## 💻 Exemplo de Uso
-```md
+2. Abra na sua IDE Java (IntelliJ, Eclipse, etc.)  
+3. Execute a classe `Application/Main.java`  
+4. Siga as instruções no terminal  
+
+---
+
+## 💻 Exemplo de Uso
+
+```
 ===========================================================
-           🚚 Calculadora de frete Rodoviário 🚚
+           🚚 Calculadora de Frete Rodoviário 🚚
 ===========================================================
 
 🚚 INFORME OS DADOS DO VEÍCULO:
@@ -122,81 +125,79 @@ Projeto/
 Digite a quantidade de eixos do veículo: 7
 Digite a média de consumo do veículo (KM/L): 1,8
 Digite a capacidade de carga do veículo (TONELADAS): 38
+
 ------------------------------------------------------------
 
 📦 INFORME OS DADOS DO FRETE:
 
 Digite o preço do combustível por litro: 5,94
 Digite a distância total do frete (KM): 550
+
 Tipo de frete:
 1 - Frete por KM
 2 - Frete por Tonelada
 3 - Frete por Carga
+
 Digite a opção desejada: 2
-Digite qual o valor do frete por Tonelada: 98
+Digite o valor do frete por tonelada: 98
+
 ===========================================================
                         RESULTADO                        
 ===========================================================
 
 💰 Valor bruto do frete:        R$ 3724,00
-⛽ Custo total com combustível: R$ 1815,00
-🔧 Custo total com desgaste:    R$ 500,50
-📉 Custo total da viagem:       R$ 2315,50
+⛽ Custo com combustível:       R$ 1815,00
+🔧 Custo com desgaste:         R$ 500,50
+📉 Custo total da viagem:      R$ 2315,50
 
 💵 Valor líquido do frete:      R$ 1408,50
 📊 Margem de lucro:            37,82%
 ```
+
 ---
 
 ## 🚀 Evolução do Projeto
 
-v1
-Versão inicial com lógica básica
+**v1**  
+Versão inicial com lógica básica  
 
-v2
-Introdução de Programação Orientada a Objetos
+**v2**  
+Aplicação de Programação Orientada a Objetos  
 
-v3 (Atual)
-Refatoração completa
+**v3 (Atual)**  
+Refatoração completa com foco em arquitetura e organização:
 
-- Uso de ENUM
-
-- Separação em camadas
-
-- Arquitetura mais profissional
-
-- Código mais limpo e escalável
+- Uso de ENUM  
+- Separação em camadas  
+- Código mais limpo e escalável  
 
 ---
 
-## 🔮 Próximas Melhorias (Roadmap)
+## 🔮 Roadmap (Próximas Evoluções)
 
-- Interface gráfica (JavaFX)
-
-- Histórico de fretes
-
-- Exportação de relatórios
-
-- Integração com banco de dados
-
-- Simulação de lucro/prejuízo
-
-- Interface visual profissional
+- Interface gráfica  
+- Histórico de fretes  
+- Exportação de relatórios  
+- Integração com banco de dados  
+- API REST com Spring Boot  
+- Simulação avançada de lucro/prejuízo  
 
 ---
 
 ## 👨‍💻 Autor
 
-Pedro Henrique Gomes Silva  
+**Pedro Henrique Gomes Silva**  
 
-🎓 Estudante de Engenharia de Computação — 5º período  
+🎓 Engenharia de Computação — 5º período  
 💻 Foco em desenvolvimento backend com Java  
 🚛 Projeto com aplicação prática no transporte rodoviário  
 
 🔗 LinkedIn:  
 https://www.linkedin.com/in/pedro-henrique-gomes-silva-6296452b6/
 
+---
 
-📄 Licença
-Projeto de uso educacional e portfólio.
+## 📄 Licença
+
+Projeto com fins educacionais e de portfólio.  
 Livre para estudo, modificação e evolução.
